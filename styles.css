@@ -1,205 +1,212 @@
-body {
+body{
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
-	color: var(--text);
-	background-color: var(--background);
+	color: #0047AB; 
 }
 
-.container {
+.container{
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
-.header-container {
-	display: flex;
+.header-container{
+	display:flex;
 	justify-content: center;
 	max-width: 100%;
 	width: 400px;
 	margin: 0 auto;
 }
 
-.score-container, .share-button-container {
+.score-container, .share-button-container{
 	margin-left: 5px;
 	margin-right: 5px;
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	height: 57px;
+	height: 75px;
 	font-weight: 600;
 }
 
-.score-container {
+.score-container{
 	align-items: flex-start;
 }
 
-.share-button-container {
+.share-button-container{
 	align-items: flex-end;
 }
 
-#score {
+#score{
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 40px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: end;
 }
 
-.share-label, .score-label {
-	margin: 0 0 2px 0;
+.share-label, .score-label{
+	margin-bottom: 0px;
 }
 
-.share-button-container a img {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+
+.share-button-container a img{
+	width: 50px;
+	height: auto;
+	margin-left: 5px;
 }
 
-hr {
+
+hr{
 	max-width: 480px;
-	border: 1px solid var(--secondary);
+	border: 1px solid #B7DFF2;
 }
 
-#board {
+#board{
 	width: 400px;
 	height: 400px;
-	background-color: var(--secondary);
-	border: 6px solid var(--primary);
+	background-color: #effaff; 
+	border: 6px solid #b7dff2;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.tile {
+.tile{
 	position: relative;
 	display: inline-block;
+
 	width: 90px;
 	height: 90px;
-	border: 5px solid var(--primary);
+	border: 5px solid #b7dff2;
 	font-size: 40px;
 	font-weight: bold;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	margin: 0;
 	padding: 0;
 }
 
+
 .x2 {
 	background-color: #eee4da;
-	color: rgba(0, 0, 0, 0);
-	background: var(--background-image-url-02);
-	background-size: 100% 100%;
+/*    color: #727371; */
+ 	color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-02);
+    background-size: 100% 100%;
 }
 
-.x4 {
+.x4{
 	background-color: #ece0ca;
-	color: rgba(0, 0, 0, 0);
-	background: var(--background-image-url-04);
-	background-size: 100% 100%;
+/*    color: #727371; */
+ 	color: rgba(0, 0, 0, 0);  
+     background-image: var(--background-image-url-04);
+     background-size: 100% 100%;
 }
 
-.x8 {
+.x8{
 	background-color: #f4b17a;
-	color: rgba(0, 0, 0, 0);
-	background: var(--background-image-url-08);
-	background-size: 100% 100%;
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-08);
+    background-size: 100% 100%;
 }
 
 .x16 {
     background-color: #f59575;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-16);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-16);
     background-size: 100% 100%;
 }
             
 .x32 {
     background-color: #f57c5f;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-32);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-32);
     background-size: 100% 100%;
 }
             
 .x64 {
     background-color: #f65d3b;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-64);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-64);
     background-size: 100% 100%;
 }
             
 .x128 {
     background-color: #edce71;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-128);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-128);
     background-size: 100% 100%;
 }
             
 .x256 {
     background-color: #edcc63;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-256);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-256);
     background-size: 100% 100%;
 }
             
 .x512 {
     background-color: #edc651;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-512);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-512);
     background-size: 100% 100%;
 }
             
 .x1024 {
     background-color: #eec744;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-1024);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-1024);
     background-size: 100% 100%;
 }
             
 .x2048 {
     background-color: #eec230;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-2048);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-2048);
     background-size: 100% 100%;
 }
             
 .x4096 {
     background-color: #fe3d3d;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-4096);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-4096);
     background-size: 100% 100%;
 }
             
 .x8192 {
     background-color: #ff2020;
-    color: rgba(0, 0, 0, 0);
-    background: var(--background-image-url-8192);
+    color: rgba(0, 0, 0, 0);  
+    background-image: var(--background-image-url-8192);
     background-size: 100% 100%;
 }
+
 
 @keyframes slide-from-right{
 	0% {
 		transform: translateX(100%);
 	}
-	100% {
+	100%{
 		transform: translateX(0);
 	}
 }
+
 
 @keyframes slide-from-left{
 	0% {
 		transform: translateX(-100%);
 	}
-	100% {
+	100%{
 		transform: translateX(0);
 	}
 }
+
 
 @keyframes slide-from-top{
 	0% {
 		transform: translateY(-100%);
 	}
-	100% {
+	100%{
 		transform: translateY(0);
 	}
 }
@@ -208,7 +215,7 @@ hr {
 	0% {
 		transform: translateY(100%);
 	}
-	100% {
+	100%{
 		transform: translateY(0);
 	}
 }
